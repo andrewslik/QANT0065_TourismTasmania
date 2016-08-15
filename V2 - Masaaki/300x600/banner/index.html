@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+    <!-- STANDARD CLICKTAG (clicktag variable is a placeholder "https://www.google.com" for example -->
+    <script language="javascript">
+        var clickTag = "https://www.google.com";
+    </script>
+
+</head>
+
+<body class="mrec">
+
+    <!-- LOADER CIRCLE -->
+    <div class="loader">
+        <img src="loader.svg" alt="" />
+    </div>
+
+    <div class="container" style="display:none;">
+
+        <!-- STANDARD CLICKTAG -->
+        <a href="javascript:window.open(window.clickTag)">
+            <div class="button"><span id="cta-text">See deals</span></div>
+            <button id="background_exit_dc"></button>
+        </a>
+
+        <div class="grey-border"></div>
+
+        <div class="overlay">
+            <div class="overlay-close">
+                <img src="close.gif" alt="" />
+            </div>
+            <h6>Important information</h6>
+            <div class="overlay-body">
+                <span class="terms-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar nunc vitae rhoncus pellentesque. Sed non ullamcorper elit. Sed feugiat gravida odio a.</span>
+            </div>
+        </div>
+
+
+        <div class="banner">
+
+            <!-- ------- FRAME 01 ------- -->
+            <h1 class="copy" id="f1-copy">Uncover Tasmania's breathtaking beauty</h1>
+
+            <!-- ------- FRAME 02 ------- -->
+            <h1 class="copy" id="f2-copy">And discover its colourful characters</h1>
+
+            <!-- ------- FRAME 04 ------- -->
+            <h1 class="copy" id="f2-1-copy">Tasmania on sale</h1>
+            <h1 class="copy" id="f2-1-subtext">Expect the unexpected</h1>
+
+            <!-- ------- FRAME 03 ------- -->
+            <div class="copy" id="f3-copy">
+                <span id="from">Curious? Fly from Sydney to</span>
+                <span id="destination">Hobart</span>
+                <span id="price-left-copy">from</span>
+                <span id="price">$XXX<span id="asterix-char">*</span></span>
+                <span id="price-right-copy">Economy One-way</span>
+            </div>
+
+            <img class="logos-qantas" src="logos-qantas.svg" />
+            <img class="logos-partners" src="logos-partners.svg" />
+            <div class="logo-divider"></div>
+
+            <!-- USE THIS IF THERE IS A "CLICK FOR EXTENDED TERMS" BUTTON -->
+            <div class="terms-wrapper">
+                <span class="terms">*Prices based on payment at qantas.com by BPAY or POLi. Sale ends 23:59 (AEST) 1 August 2016, unless sold out prior. Flights are on QantasLink. Selected travel dates and conditions apply.</span>
+            </div>
+
+
+            <!-- ------- BASE ELEMENTS ------- -->
+            <div class="shapes">
+                <img id="blue-shape" src="shape-blue.svg" />
+                <img id="red-shape" src="shape-red.svg" />
+                <img id="mask-shape" src="shape-mask.svg" />
+            </div>
+            <img id="red-shape-end-frame" src="shape-red-end-frame2.svg" />
+            <img id="red-shape-end-frame2" src="shape-red-end-frame2.svg" />
+            <img id="white-shape" src="shape-white.svg" />
+            <img id="red-shape-base" src="red-shape-base.svg" alt="">
+
+            <video id="video-container" width="300" height="600" muted>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+    <script src="banner.min.js"></script>
+</body>
+
+</html>

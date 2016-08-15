@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script src="//s0.2mdn.net/ads/studio/Enabler.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script language="javascript">
+            if (Enabler.isInitialized())
+                init();
+            else
+                Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+
+            function init() {
+                if (Enabler.isPageLoaded())
+                    politeInit();
+                else
+                    Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+            }
+        </script>
+</head>
+
+<body class="mrec">
+
+    <!-- LOADER CIRCLE -->
+    <div class="loader">
+        <img src="loader.svg" alt="" />
+    </div>
+
+    <div class="container" style="display:none;">
+
+        <!-- STANDARD CLICKTAG -->
+        <a href="javascript:exit()">
+            <div class="button"><span id="cta-text"></span></div>
+            <button id="background_exit_dc"></button>
+        </a>
+
+        <div class="grey-border"></div>
+
+        <div class="overlay">
+            <div class="overlay-close">
+                <img src="close.gif" alt="" />
+            </div>
+            <h6>Important information</h6>
+            <div class="overlay-body">
+                <span class="terms-txt"></span>
+            </div>
+        </div>
+
+
+        <div class="banner">
+
+            <!-- ------- FRAME 01 ------- -->
+            <h1 class="copy" id="f1-copy"></h1>
+
+            <!-- ------- FRAME 02 ------- -->
+            <h1 class="copy" id="f2-copy"></h1>
+
+            <!-- ------- FRAME 04 ------- -->
+            <h1 class="copy" id="f2-1-copy"></h1>
+            <h1 class="copy" id="f2-1-subtext"></h1>
+
+            <!-- ------- FRAME 03 ------- -->
+            <div class="copy" id="f3-copy">
+                <span id="from"></span>
+                <span id="destination"></span>
+                <span id="price-left-copy">from</span>
+                <span id="price"><span id="asterix-char">*</span></span>
+                <span id="price-right-copy"></span>
+            </div>
+
+            <img class="logos-qantas" src="logos-qantas.svg" />
+            <img class="logos-partners" src="logos-partners.svg" />
+            <div class="logo-divider"></div>
+
+            <!-- USE THIS IF THERE IS A "CLICK FOR EXTENDED TERMS" BUTTON -->
+            <div class="terms-wrapper">
+                <span class="terms"></span>
+            </div>
+
+
+            <!-- ------- BASE ELEMENTS ------- -->
+            <div class="shapes">
+                <img id="blue-shape" src="shape-blue.svg" />
+                <img id="red-shape" src="shape-red.svg" />
+                <img id="mask-shape" src="shape-mask.svg" />
+            </div>
+            <img id="red-shape-end-frame" src="shape-red-end-frame2.svg" />
+            <img id="red-shape-end-frame2" src="shape-red-end-frame2.svg" />
+            <img id="white-shape" src="shape-white.svg" />
+            <img id="red-shape-base" src="red-shape-base.svg" alt="">
+
+            <div id="video">
+                <video id="video-el" width="300" height="600" autoplay>
+                    <source type="video/mp4">
+                    <source type="video/webm">
+                </video>
+            </div>
+
+            <div class="bg-image">
+                <img class="bg-image-01" src="" alt="" />
+                <img class="bg-image-02" src="" alt="" />
+            </div>
+
+        </div>
+    </div>
+    <script src="mobile-detect.min.js"></script>
+    <script src="banner.min.js"></script>
+</body>
+
+</html>
